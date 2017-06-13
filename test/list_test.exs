@@ -5,7 +5,7 @@ defmodule ListTest do
     ["Lucho", "Juan Pi", "Carlos", "Isaias", "Ale", "Nico", "Mati", "Ricardo"]
   end
 
-  # TODO: Didn't get exactly what you want me to test
+  # TODO: Recibe una lista de argumentos y lo convierte a strings, hace eso con sigils
   # test "sigil" do
   #   assert ~(Lucho "Juan Pi" Carlos Isaias Ale Nico Mati Ricardo) == sample()
   # end
@@ -52,6 +52,7 @@ defmodule ListTest do
       |> Enum.filter_map(&String.contains?(&1,"c"), &(&1)) == ["Lucho", "Nico", "Ricardo"]
   end
   #
+  # TODO: Testea que haga un map testeando con sample
   # test "list comprehension" do
   #   assert #?
   # end
